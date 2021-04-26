@@ -68,7 +68,7 @@ for i in dList:
 		if choice==1:
 			choose=RT.getValue(metaRT,"Frame selected",n-1)
 		#duplicate the right frame and give it the right title
-		impDup=IJ.run("Duplicate...", "title=Image_R"+ numstr +" duplicate frames="+ choose +"")
+		impDup=IJ.run("Duplicate...", "title=Image_R"+ str(numstr) +" duplicate frames="+ str(choose) +"")
 		imp.close()
 		# add 1 to the counter
 		n=n+1
